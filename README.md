@@ -3,19 +3,31 @@ About r-diffobj
 
 Home: https://github.com/brodieG/diffobj
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-diffobj-feedstock/blob/master/LICENSE.txt)
 
 Summary: Generate a colorized diff of two R objects for an intuitive visualization of their differences.
-
-
 
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://travis-ci.com/conda-forge/r-diffobj-feedstock">
+        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/r-diffobj-feedstock/master.svg?label=macOS">
+      </a>
+    </td>
+  </tr><tr>
+    <td>Drone</td>
+    <td>
+      <a href="https://cloud.drone.io/conda-forge/r-diffobj-feedstock">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/r-diffobj-feedstock/master.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -29,45 +41,73 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base3.6target_platformlinux-64</td>
+              <td>linux_64_r_base3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base3.6target_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_r_base4.0target_platformlinux-64</td>
+              <td>linux_64_r_base4.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0target_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base3.6target_platformosx-64</td>
+              <td>linux_aarch64_r_base3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base3.6target_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_r_base3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.0target_platformosx-64</td>
+              <td>linux_aarch64_r_base4.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0target_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_r_base3.6target_platformwin-64</td>
+              <td>linux_ppc64le_r_base3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=win&configuration=win_64_r_base3.6target_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_r_base3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_r_base4.0target_platformwin-64</td>
+              <td>linux_ppc64le_r_base4.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0target_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_r_base4.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_r_base3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=win&configuration=win_64_r_base3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_r_base4.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7052&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-diffobj-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr>
