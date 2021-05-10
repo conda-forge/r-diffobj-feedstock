@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/diffobj_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/diffobj/diffobj_{{ version }}.tar.gz
-  sha256: 414e5573470b9565b9149a0a61c7e8344fb37f889d23dc4e131acc8aa62e6df4
+  sha256: 38cd8ac8698af3c0be42e630088d3a24e9ed8fb72b411a68cf295ea995839efc
 
 build:
   merge_build_host: true  # [win]
